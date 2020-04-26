@@ -1,4 +1,4 @@
-This assignment was a semester long group project for CMPT 322: Software Engineering.
+This assignment was a semester long group project for my CMPT 322: Software Engineering course.
 
 The goal of this assignment was to use the Agile approach to software development in order to create a web-based math game for 1st and 2nd grade students. The requirements were that a student could access a personal account and play a game which ended with a scored assessment. The teacher needed to be able to create accounts for the students, look at student’s scores, give certificates for game completion, and assess various other data points that would be beneficial to the classroom.
 
