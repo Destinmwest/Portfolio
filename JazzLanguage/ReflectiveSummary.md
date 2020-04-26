@@ -4,4 +4,4 @@ The goal of the assignment was to create a scanner and parser for a rudimentary 
 
 I chose this assignment for my portfolio because it gave me a deeper understanding of the programming languages I would be using in future projects as well as future careers I would be taking. Learning the syntax and semantics that determine the functionality of a language have been valuable in the broadest sense as I have progressed in the field on computer science.
  
-In completing this assignment I gained a deeper understanding of the concepts behind language design which in turn deepened my understanding of software design. I was also able to utilize critical thinking and creativity in designing the language along with collaboration in working with my team to achieve our goals.
+In completing this assignment, I gained a deeper understanding of the concepts behind language design which in turn deepened my understanding of software design. I was also able to utilize critical thinking and creativity in designing the language along with collaboration in working with my team to achieve our goals.
