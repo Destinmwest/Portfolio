@@ -1,0 +1,58 @@
+class JazzParser;
+
+// Code to be included in the generated parser class
+parser code {:
+    JazzScanner scanner;
+    public JazzParser(JazzScanner scanner) {
+        this.scanner = scanner;
+    }
+:}
+
+// Code the parser will use to get the next token
+scan with {:
+    return scanner.yylex();
+:}
+
+// Specification of the grammar
+
+
+// Types of terminals and non-terminals (rules)
+terminal        PLUS, MINUS, TIMES, DIVIDE, POWER, LPAREN, RPAREN, COMMA, EQUALS;
+terminal Double NUMBER; // NUMBER terminals (tokens) have data type Double
+terminal String IDENTIFIER, INPUT, PRINT, ASSIGNED, STATEMENT, STRING_LITERAL; 
+// IDENTIFIER terminals (tokens) have data type String
+
+non terminal Node string, statement, expr, term, negation, power, paren;
+
+// Rules
+statement ::= IDENTIFIER:a ASSIGNED expr:b   //{: RESULT = new assigned_statement(a, b); :}
+    | STRING_LITERAL string:a       //{: RESULT = new string_literal_statement(a, b); :}
+    | STATEMENT string:a            //{: RESULT = new statement_statement(a, b); :}
+    | INPUT string:a               //{: RESULT = new input_statement(a, b); :}
+    | PRINT string:a                 //{: RESULT = new print_statement(a, b); :}
+    | COMMA expr:a                  //{: RESULT = new comma_statement(a, b); :}
+    | EQUALS expr:a                 //{:RESULT = new equals_statement(a, b); :}
+;
+
+expr ::= expr:a PLUS term:b   //{: RESULT = new PlusNode(a, b); :}
+    | expr:a MINUS term:b    // {: RESULT = new MinusNode(a, b); :}
+    | term:a                  //{: RESULT = a; :}
+;
+
+term ::= term:a TIMES negation:b  //{: RESULT = new TimesNode(a, b); :}
+    | term:a DIVIDE negation:b    //{: RESULT = new DivideNode(a, b); :}
+    | negation:a                  //{: RESULT = a; :}
+;
+
+negation ::= MINUS power:a        //{: RESULT = new MinusNode(new ValueNode(0), a); :}
+    | power:a                     //{: RESULT = a; :}
+;
+
+power ::= paren:a POWER power:b   //{: RESULT = new PowerNode(a, b); :}
+    | paren:a                     //{: RESULT = a; :}
+;
+
+paren ::= LPAREN expr:a RPAREN   // {: RESULT = a; :}
+    | NUMBER:x                    //{: RESULT = new ValueNode(x); :}
+    | IDENTIFIER:name             //{: RESULT = new VariableNode(name); :}
+;
