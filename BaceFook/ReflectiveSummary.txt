@@ -1,9 +1,0 @@
-This project was completed as the final project for my CMPT 307: Database Systems course.
-
-The goal of the assignment was to, in a team, create a database along with a user-oriented application that could query from the database as well as insert new data.
-
-My partners and I had very little experience with Python at that time and wanted to expand our knowledge by working with a new language. With a little bit of research, we discovered the Flask framework that was created for Python oriented web development. We then decided to build a Facebook type blog where a user could create an account in order to post, read, like and sort comments. To fully realize this project the technologies we utilized were Python Flask, HTML/CSS and SQL.
-
-I chose this assignment for my portfolio because it was the first assignment where I, and my team, were tasked with creating a non-trivial application from start to finish. We were given a very broad range of possibilities with the only requirement being that we create database-oriented application. We had to choose what type of application we were going to create, what technologies we were going to use, and how to put all of it together successfully.
-
-This process required our team to rely on the concepts and techniques in software engineering we'd learned so far. We had to develop new problem-solving skills needed for our individual portions of the project as well as for our group portions. This gave us a lot of new group-oriented project experience. We had to think critically to gain the understanding necessary to overcome obstacles and finalize the project. We had to think creatively to create an application that was aesthetically pleasing and intuitively usable. And we had to demonstrate high level communication and collaboration in order to complete the assignment by the due date.
