@@ -1,2 +1,1 @@
-# CMPT341
-Homework 4 Lexer/Parser
+A sanner and parser for the Jazz programming language.
