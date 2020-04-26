@@ -1,6 +1,6 @@
 This assignment was the final project for CMPT 352: Computer Networks course
 
-The goal of this assignment was to create a protocol as a class that could then be followed by individual teams in order to write a chat server and a chat client that could then communicate with other team’s servers and clients. The client and server are written in Java and use socket programming.
+The goal of this assignment was to create a protocol as a class that could then be followed by individual teams in order to write a chat server and a chat client that could communicate with other team’s servers and clients. The client and server are written in Java and use socket programming.
 
 I chose this assignment because it afforded a peek under the hood, so to speak, of the protocols I use every day. It also felt very empowering to be able to create a protocol from scratch and then write software that could communicate with any other piece of software that also used the protocol.
 
