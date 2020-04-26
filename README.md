@@ -1,2 +1,2 @@
 # Portfolio
-A collection a CS projects I completed while attending Westminster College.
+A collection of projects I completed while obtaining my Bachelors in Computer Science at Westminster College.
